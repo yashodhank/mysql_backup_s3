@@ -1,3 +1,6 @@
+# Ignore Backup Config file from my Dev Env
+backup_config.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
