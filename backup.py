@@ -1,10 +1,10 @@
 import os
-import sys
 import json
 import subprocess
 import logging
 import requests
 import shutil
+import re  # Make sure this line is here
 from datetime import datetime
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
