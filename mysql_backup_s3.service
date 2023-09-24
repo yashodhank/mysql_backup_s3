@@ -1,0 +1,13 @@
+[Unit]
+Description=Backup Service for MySQL Databases to Wasabi S3
+
+[Service]
+User=root
+WorkingDirectory=/root/mysql_backup_s3
+Environment="PATH=/root/mysql_backup_s3/venv-mysql_backup_s3/bin"
+ExecStart=/root/mysql_backup_s3/venv-mysql_backup_s3/bin/python3 /root/mysql_backup_s3/backup.py
+Restart=on-failure
+RestartSec=30s
+
+[Install]
+WantedBy=default.target
