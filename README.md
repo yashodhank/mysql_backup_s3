@@ -1,5 +1,3 @@
-
-```markdown
 # MySQL Backup/Restore to/from S3 - mysql_backup_s3
 
 This project allows for the automated backup of MySQL databases to an S3 bucket and restoration of those backups. It is configured to run as a service to ensure regular backups without manual intervention.
